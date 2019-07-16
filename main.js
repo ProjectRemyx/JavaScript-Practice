@@ -152,3 +152,19 @@ console.log('Classes and this');
 cat.makeNoise();
 console.log(cat.type);
 
+//Trailing Commas - Trailing Commas still work in ES6
+const comma = (param1) =>{
+    const commaExample = {
+        name: 'Jing',
+    };
+    console.log(commaExample);
+};
+comma();
+
+//Sets - Only cares about unique values
+const exampleSet = new Set([1,1,1,1,2,2,2,2]);
+exampleSet.add(3);
+console.log(exampleSet.delete(3));
+console.log(exampleSet.has(3));
+console.log(exampleSet);
+
