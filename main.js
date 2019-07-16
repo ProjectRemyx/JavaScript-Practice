@@ -130,3 +130,25 @@ console.log(numArray.includes(0));
 // import{ data } from './main.js';
 // console.log(data);
 
+//padStart() padEnd() - Add values to start / end of a string
+let padExample = 'Jing';
+console.log("padStart and padEnd");
+console.log(padExample.padStart(10, 'a'));
+console.log(padExample.padEnd(10, 'b'));
+
+//Class and this
+class Animal{
+    constructor(type, legs){
+        this.type = type;
+        this.legs = legs; 
+    }
+    makeNoise(sound = 'Loud'){
+        console.log(sound);
+    }
+}
+
+let cat = new Animal('Cat', 4);
+console.log('Classes and this');
+cat.makeNoise();
+console.log(cat.type);
+
